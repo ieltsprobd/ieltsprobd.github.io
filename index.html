@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IELTS Pro & Visa Process - HSC এর পরে IELTS, Target 7+ | IELTS, Spoken English, PTE ও Study Visa guidance.">
+  <title>IELTS Pro & Visa Process | HSC এর পরে IELTS, Target 7+</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue-900: #1e3a8a;
+      --blue-600: #2563eb;
+      --blue-500: #3b82f6;
+      --yellow-400: #fbbf24;
+      --bkash: #e2136e;
+      --nagad: #f15a24;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: "Hind Siliguri", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    .hero-gradient {
+      background:
+        radial-gradient(circle at 82% 12%, rgba(255, 255, 255, 0.16), transparent 28%),
+        linear-gradient(135deg, var(--blue-900) 0%, var(--blue-500) 100%);
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 2px;
+      background: var(--yellow-400);
+      transition: width 0.25s ease;
+    }
+
+    .nav-link:hover::after,
+    .nav-link:focus-visible::after {
+      width: 100%;
+    }
+
+    .card-hover {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(30, 58, 138, 0.15);
+    }
+
+    .btn-primary {
+      transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+    }
+
+    .btn-primary:hover {
+      transform: scale(1.04);
+      box-shadow: 0 10px 30px rgba(59, 130, 246, 0.35);
+    }
+
+    .hero-card {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      min-height: 430px;
+    }
+
+    .hero-card::before {
+      content: "English";
+      position: absolute;
+      right: -44px;
+      top: 26px;
+      z-index: -1;
+      color: rgba(30, 58, 138, 0.05);
+      font-size: clamp(4rem, 12vw, 8rem);
+      font-weight: 800;
+      transform: rotate(-12deg);
+      white-space: nowrap;
+    }
+
+    .score-ring {
+      background: conic-gradient(var(--yellow-400) 0 82%, #dbeafe 82% 100%);
+    }
+
+    .toast {
+      position: fixed;
+      top: 92px;
+      right: 20px;
+      z-index: 80;
+      transform: translateX(120%);
+      opacity: 0;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    .toast.is-visible {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    .gallery-card {
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .gallery-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(59, 130, 246, 0.35);
+      box-shadow: 0 22px 45px rgba(30, 58, 138, 0.16);
+    }
+
+    .gallery-frame {
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      background: #eff6ff;
+    }
+
+    .gallery-frame.is-square {
+      aspect-ratio: 1 / 1;
+    }
+
+    .gallery-frame.is-portrait {
+      aspect-ratio: 3 / 4;
+    }
+
+    .gallery-image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+
+    .gallery-card:hover .gallery-image {
+      transform: scale(1.06);
+    }
+
+    @media (max-width: 768px) {
+      .hero-card {
+        min-height: 340px;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <div id="toast" class="toast rounded-xl bg-blue-900 px-5 py-3 text-sm font-semibold text-white shadow-2xl" role="status" aria-live="polite"></div>
+
+  <a
+    href="https://wa.me/8801719994452?text=আমি%20IELTS%20কোর্সে%20ভর্তি%20হতে%20চাই"
+    target="_blank"
+    rel="noopener"
+    class="fixed bottom-6 right-6 z-50 rounded-full bg-[#25D366] p-4 text-white shadow-2xl transition-transform duration-300 hover:scale-110"
+    aria-label="WhatsApp Send"
+  >
+    <i data-lucide="message-circle" class="h-7 w-7"></i>
+  </a>
+
+  <nav class="sticky top-0 z-40 bg-white shadow-md">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-20 items-center justify-between">
+        <a href="#home" class="flex items-center gap-3" aria-label="IELTS Pro home">
+          <img src="images/ielts-pro-logo.jpg" alt="IELTS Pro & Visa Process logo" class="h-14 w-14 rounded-xl object-cover shadow-md" width="1333" height="1333">
+          <span class="hidden text-xl font-bold text-blue-900 sm:block">IELTS Pro & Visa Process</span>
+        </a>
+
+        <div class="hidden items-center gap-5 text-sm md:flex lg:gap-8 lg:text-base">
+          <a href="#home" class="nav-link font-medium text-gray-700 hover:text-blue-600">হোম</a>
+          <a href="#courses" class="nav-link font-medium text-gray-700 hover:text-blue-600">কোর্সসমূহ</a>
+          <a href="#instructor" class="nav-link font-medium text-gray-700 hover:text-blue-600">আমাদের সম্পর্কে</a>
+          <a href="#hsc" class="nav-link font-medium text-gray-700 hover:text-blue-600">HSC স্পেশাল</a>
+          <a href="#visa" class="nav-link font-medium text-gray-700 hover:text-blue-600">ভিসা প্রসেস</a>
+          <a href="#payment" class="nav-link font-medium text-gray-700 hover:text-blue-600">পেমেন্ট</a>
+          <a href="#gallery" class="nav-link font-medium text-gray-700 hover:text-blue-600">গ্যালারি</a>
+          <a href="#contact" class="nav-link font-medium text-gray-700 hover:text-blue-600">যোগাযোগ</a>
+        </div>
+
+        <button id="mobile-menu-btn" class="rounded-lg p-2 text-blue-900 md:hidden" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <i data-lucide="menu" class="h-7 w-7"></i>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="hidden pb-4 md:hidden">
+        <div class="flex flex-col gap-4">
+          <a href="#home" class="py-2 font-medium text-gray-700 hover:text-blue-600">হোম</a>
+          <a href="#courses" class="py-2 font-medium text-gray-700 hover:text-blue-600">কোর্সসমূহ</a>
+          <a href="#instructor" class="py-2 font-medium text-gray-700 hover:text-blue-600">আমাদের সম্পর্কে</a>
+          <a href="#hsc" class="py-2 font-medium text-gray-700 hover:text-blue-600">HSC স্পেশাল</a>
+          <a href="#visa" class="py-2 font-medium text-gray-700 hover:text-blue-600">ভিসা প্রসেস</a>
+          <a href="#payment" class="py-2 font-medium text-gray-700 hover:text-blue-600">পেমেন্ট</a>
+          <a href="#gallery" class="py-2 font-medium text-gray-700 hover:text-blue-600">গ্যালারি</a>
+          <a href="#contact" class="py-2 font-medium text-gray-700 hover:text-blue-600">যোগাযোগ</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero-gradient text-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid items-center gap-12 pb-16 pt-20 md:grid-cols-2">
+          <div class="order-2 space-y-6 text-center md:order-1 md:text-left">
+            <span class="inline-block rounded-full bg-yellow-400 px-4 py-1 font-bold text-blue-900">HSC এর পরে IELTS, Target 7+</span>
+            <h1 class="text-4xl font-bold leading-tight md:text-5xl">আপনার স্বপ্নের বিদেশ যাত্রা শুরু হোক IELTS দিয়ে</h1>
+            <p class="text-xl text-blue-100">প্রফেশনাল গাইডেন্স, আধুনিক ক্লাসরুম এবং প্রমাণিত মেথডে অর্জন করুন কাঙ্খিত IELTS স্কোর। HSC এর পরে IELTS / PTE করে Canada, USA, UK যান।</p>
+            <p class="text-base text-blue-100">English fallback: Start your IELTS, Spoken English, PTE and study visa journey with expert guidance.</p>
+            <div class="flex flex-wrap justify-center gap-3 md:justify-start">
+              <span class="rounded-full bg-white/20 px-3 py-1 text-sm">অভিজ্ঞ শিক্ষক</span>
+              <span class="rounded-full bg-white/20 px-3 py-1 text-sm">ক্লাস রেকর্ডিং</span>
+              <span class="rounded-full bg-white/20 px-3 py-1 text-sm">মক টেস্ট</span>
+            </div>
+            <div class="flex flex-col justify-center gap-4 pt-4 sm:flex-row md:justify-start">
+              <a href="#contact" class="btn-primary rounded-2xl bg-white px-8 py-4 text-center font-bold text-blue-600 hover:bg-gray-100">ভর্তি হন এখনই</a>
+              <a href="https://wa.me/8801719994452?text=আমি%20IELTS%20কোর্সে%20ভর্তি%20হতে%20চাই" target="_blank" rel="noopener" class="btn-primary rounded-2xl border-2 border-white px-8 py-4 text-center font-bold hover:bg-white/10">ফ্রি কাউন্সেলিং</a>
+            </div>
+            <div class="flex justify-center gap-8 pt-4 md:justify-start">
+              <div><span class="text-3xl font-bold text-yellow-400">500+</span><p class="text-sm">সফল শিক্ষার্থী</p></div>
+              <div><span class="text-3xl font-bold text-yellow-400">7+</span><p class="text-sm">গড় ব্যান্ড স্কোর</p></div>
+              <div><span class="text-3xl font-bold text-yellow-400">98%</span><p class="text-sm">ভিসা সাকসেস</p></div>
+            </div>
+          </div>
+
+          <div class="order-1 md:order-2">
+            <div class="hero-card rounded-3xl border-8 border-white/30 bg-white p-6 text-blue-900 shadow-2xl">
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <p class="mb-2 rounded-full bg-yellow-400 px-4 py-1 text-sm font-bold">বোনাস: বই ফ্রি</p>
+                  <h2 class="text-3xl font-bold">Natural Spoken English</h2>
+                  <p class="mt-2 text-gray-600">IELTS, Spoken, PTE এবং Visa Process</p>
+                </div>
+                <div class="score-ring flex h-24 w-24 items-center justify-center rounded-full p-2">
+                  <div class="flex h-full w-full items-center justify-center rounded-full bg-white text-3xl font-bold">7+</div>
+                </div>
+              </div>
+              <div class="mt-10 grid grid-cols-2 gap-4">
+                <div class="rounded-2xl bg-blue-50 p-5">
+                  <i data-lucide="book-open" class="mb-4 h-8 w-8 text-blue-600"></i>
+                  <p class="font-bold">48 Live Classes</p>
+                  <p class="text-sm text-gray-600">রেকর্ডিংসহ</p>
+                </div>
+                <div class="rounded-2xl bg-yellow-50 p-5">
+                  <i data-lucide="award" class="mb-4 h-8 w-8 text-yellow-600"></i>
+                  <p class="font-bold">Best Speaker</p>
+                  <p class="text-sm text-gray-600">Rajib Sir</p>
+                </div>
+                <div class="rounded-2xl bg-green-50 p-5">
+                  <i data-lucide="target" class="mb-4 h-8 w-8 text-green-600"></i>
+                  <p class="font-bold">Mock Test</p>
+                  <p class="text-sm text-gray-600">Full feedback</p>
+                </div>
+                <div class="rounded-2xl bg-pink-50 p-5">
+                  <i data-lucide="plane" class="mb-4 h-8 w-8 text-pink-600"></i>
+                  <p class="font-bold">Study Visa</p>
+                  <p class="text-sm text-gray-600">Guidance</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-16 text-center">
+          <h2 class="mb-4 text-4xl font-bold text-blue-900">কেন IELTS Pro বেছে নিবেন?</h2>
+          <p class="text-lg text-gray-600">আমাদের সাথে সফলতার যাত্রা শুরু করুন</p>
+        </div>
+        <div class="grid gap-8 md:grid-cols-4">
+          <div class="rounded-3xl bg-blue-50 p-6">
+            <i data-lucide="award" class="mb-4 h-8 w-8 text-blue-600"></i>
+            <h3 class="mb-2 text-xl font-bold text-blue-900">প্রমাণিত সাফল্য</h3>
+            <p class="text-gray-600">500+ শিক্ষার্থী 7+ ব্যান্ড স্কোর অর্জন করেছে।</p>
+          </div>
+          <div class="rounded-3xl bg-blue-50 p-6">
+            <i data-lucide="users" class="mb-4 h-8 w-8 text-blue-600"></i>
+            <h3 class="mb-2 text-xl font-bold text-blue-900">অভিজ্ঞ শিক্ষক</h3>
+            <p class="text-gray-600">Rajib Sir এর সরাসরি তত্ত্বাবধান।</p>
+          </div>
+          <div class="rounded-3xl bg-blue-50 p-6">
+            <i data-lucide="video" class="mb-4 h-8 w-8 text-blue-600"></i>
+            <h3 class="mb-2 text-xl font-bold text-blue-900">ক্লাস রেকর্ডিং</h3>
+            <p class="text-gray-600">যেকোনো সময় রিভিশনের সুবিধা।</p>
+          </div>
+          <div class="rounded-3xl bg-blue-50 p-6">
+            <i data-lucide="target" class="mb-4 h-8 w-8 text-blue-600"></i>
+            <h3 class="mb-2 text-xl font-bold text-blue-900">মক টেস্ট</h3>
+            <p class="text-gray-600">আসল পরীক্ষার পরিবেশে নিয়মিত অনুশীলন।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses" class="bg-gray-50 py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-16 text-center">
+          <h2 class="mb-4 text-4xl font-bold text-blue-900">আমাদের কোর্সসমূহ</h2>
+          <p class="text-lg text-gray-600">আপনার লক্ষ্য অনুযায়ী সেরা কোর্সটি বেছে নিন</p>
+        </div>
+        <div class="grid gap-8 md:grid-cols-3">
+          <article class="card-hover rounded-3xl bg-white p-8 shadow-lg">
+            <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-100">
+              <i data-lucide="globe" class="h-8 w-8 text-blue-600"></i>
+            </div>
+            <h3 class="mb-4 text-2xl font-bold text-blue-900">Online IELTS Course</h3>
+            <p class="mb-6 text-gray-600">Live ক্লাস, মক টেস্ট, পার্সোনাল ফিডব্যাক সহ সম্পূর্ণ IELTS প্রস্তুতি। Target 7+ band.</p>
+            <ul class="mb-6 space-y-3 text-gray-700">
+              <li class="flex items-center gap-2"><i data-lucide="check-circle" class="h-5 w-5 text-green-500"></i>48 টি Live ক্লাস</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle" class="h-5 w-5 text-green-500"></i>12 টি Full Mock Test</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle" class="h-5 w-5 text-green-500"></i>Writing & Speaking Feedback</li>
+            </ul>
+            <a href="https://wa.me/8801719994452?text=আমি%20Online%20IELTS%20কোর্সে%20ভর্তি%20হতে%20চাই" target="_blank" rel="noopener" class="btn-primary block rounded-xl bg-blue-600 px-6 py-3 text-center font-bold text-white hover:bg-blue-700">ভর্তি হন</a>
+          </article>
+
+          <article class="card-hover rounded-3xl bg-white p-8 shadow-lg">
+            <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-yellow-100">
+              <i data-lucide="mic" class="h-8 w-8 text-yellow-600"></i>
+            </div>
+            <h3 class="mb-4 text-2xl font-bold text-blue-900">Spoken English</h3>
+            <p class="mb-6 text-gray-600">Fluently ইংরেজি বলার জন্য practical course. Daily life, interview ও presentation কভার।</p>
+            <ul class="mb-6 space-y-3 text-gray-700">
+              <li class="flex items-center gap-2"><i data-lucide="check-circle" class="h-5 w-5 text-green-500"></i>36 টি Interactive ক্লাস</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle" class="h-5 w-5 text-green-500"></i>Pronunciation Practice</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle" class="h-5 w-5 text-green-500"></i>Group Discussion</li>
+            </ul>
+            <a href="https://wa.me/8801719994452?text=আমি%20Spoken%20English%20কোর্সে%20ভর্তি%20হতে%20চাই" target="_blank" rel="noopener" class="btn-primary block rounded-xl bg-blue-600 px-6 py-3 text-center font-bold text-white hover:bg-blue-700">ভর্তি হন</a>
+          </article>
+
+          <article class="card-hover rounded-3xl bg-white p-8 shadow-lg">
+            <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-green-100">
+              <i data-lucide="laptop" class="h-8 w-8 text-green-600"></i>
+            </div>
+            <h3 class="mb-4 text-2xl font-bold text-blue-900">PTE Academic</h3>
+            <p class="mb-6 text-gray-600">Computer-based PTE পরীক্ষার সম্পূর্ণ প্রস্তুতি। AI scoring ও real exam practice.</p>
+            <ul class="mb-6 space-y-3 text-gray-700">
+              <li class="flex items-center gap-2"><i data-lucide="check-circle" class="h-5 w-5 text-green-500"></i>40 টি Live ক্লাস</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle" class="h-5 w-5 text-green-500"></i>15 টি Full Mock Test</li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle" class="h-5 w-5 text-green-500"></i>Software Practice</li>
+            </ul>
+            <a href="https://wa.me/8801719994452?text=আমি%20PTE%20Academic%20কোর্সে%20ভর্তি%20হতে%20চাই" target="_blank" rel="noopener" class="btn-primary block rounded-xl bg-blue-600 px-6 py-3 text-center font-bold text-white hover:bg-blue-700">ভর্তি হন</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gradient-to-br from-blue-50 to-white py-20">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 md:grid-cols-2 lg:px-8">
+        <div>
+          <h2 class="mb-6 text-4xl font-bold text-blue-900">বোনাস: Natural Spoken বই সম্পূর্ণ ফ্রি</h2>
+          <p class="mb-6 text-lg text-gray-700">কোর্সে ভর্তি হলে পাবেন Rajib Sir এর লেখা বই "Natural Spoken English"। Beginner থেকে Advanced level পর্যন্ত practical expression, idioms ও phrase থাকছে।</p>
+          <div class="mb-8 space-y-4">
+            <p class="flex items-center gap-3 text-gray-700"><i data-lucide="book-open" class="h-6 w-6 text-blue-600"></i>Beginner থেকে Advanced Level কভার</p>
+            <p class="flex items-center gap-3 text-gray-700"><i data-lucide="headphones" class="h-6 w-6 text-blue-600"></i>Audio Pronunciation সহ</p>
+            <p class="flex items-center gap-3 text-gray-700"><i data-lucide="star" class="h-6 w-6 text-blue-600"></i>Practical spoken English support</p>
+          </div>
+          <a href="#contact" class="btn-primary inline-flex items-center gap-2 rounded-2xl bg-blue-600 px-8 py-4 font-bold text-white hover:bg-blue-700">কোর্সে ভর্তি হন <i data-lucide="arrow-right" class="h-5 w-5"></i></a>
+        </div>
+        <div class="rounded-3xl border-8 border-blue-100 bg-white p-8 shadow-2xl">
+          <p class="mb-3 text-sm font-bold uppercase text-blue-600">Course Bonus</p>
+          <h3 class="text-4xl font-bold text-blue-900">Natural Spoken</h3>
+          <p class="mt-4 text-gray-600">1000+ useful expressions for daily conversation, interview and presentation.</p>
+          <div class="mt-8 rounded-2xl bg-blue-900 p-6 text-white">
+            <p class="text-lg font-semibold">English made natural</p>
+            <p class="mt-2 text-blue-100">Bangla explanation with simple English fallback.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="instructor" class="bg-white py-20">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 md:grid-cols-2 lg:px-8">
+        <div class="rounded-3xl bg-blue-50 p-8 shadow-lg">
+          <div class="flex h-72 items-center justify-center rounded-3xl bg-white">
+            <div class="text-center">
+              <i data-lucide="award" class="mx-auto mb-5 h-20 w-20 text-yellow-500"></i>
+              <p class="text-2xl font-bold text-blue-900">Best Speaker Award</p>
+              <p class="mt-2 text-gray-600">Rajib Sir</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="mb-3 font-bold text-yellow-600">আপনার শিক্ষক</p>
+          <h2 class="mb-6 text-4xl font-bold text-blue-900">Rajib Sir</h2>
+          <p class="mb-6 text-lg leading-relaxed text-gray-700">Best Speaker Award recipient, dedicated English instructor with extensive experience in IELTS, Spoken English and PTE। গত ৮ বছর ধরে শত শত শিক্ষার্থীকে বিদেশ যাত্রার স্বপ্ন পূরণে সাহায্য করেছেন।</p>
+          <div class="mb-6 grid grid-cols-2 gap-4">
+            <div class="rounded-xl bg-blue-50 p-4">
+              <p class="text-3xl font-bold text-blue-600">8+</p>
+              <p class="text-gray-600">বছরের অভিজ্ঞতা</p>
+            </div>
+            <div class="rounded-xl bg-blue-50 p-4">
+              <p class="text-3xl font-bold text-blue-600">500+</p>
+              <p class="text-gray-600">সফল শিক্ষার্থী</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <span class="rounded-full bg-blue-100 px-4 py-2 font-medium text-blue-900">IELTS Expert</span>
+            <span class="rounded-full bg-blue-100 px-4 py-2 font-medium text-blue-900">PTE Trainer</span>
+            <span class="rounded-full bg-blue-100 px-4 py-2 font-medium text-blue-900">Spoken Coach</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="bg-blue-50 py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto mb-12 max-w-3xl text-center">
+          <p class="mb-3 font-bold text-yellow-600">Our Achievements</p>
+          <h2 class="mb-4 text-4xl font-bold text-blue-900">গ্যালারি ও অর্জন</h2>
+          <p class="text-lg text-gray-700">IELTS Pro-এর কোর্স, শিক্ষক, পুরস্কার এবং স্টাডি অ্যাব্রড গাইডেন্সের কিছু গুরুত্বপূর্ণ মুহূর্ত। English fallback: course highlights, achievements and learning resources.</p>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <figure class="gallery-card overflow-hidden rounded-3xl border border-blue-100 bg-white shadow-lg">
+            <div class="gallery-frame is-square">
+              <img src="images/do-ielts-banner.jpg" alt="Do IELTS Banner - IELTS Pro easy spoken English course banner" class="gallery-image" width="1280" height="1280" loading="lazy" decoding="async">
+            </div>
+            <figcaption class="px-5 py-4 text-center font-bold text-blue-900">Do IELTS Banner</figcaption>
+          </figure>
+
+          <figure class="gallery-card overflow-hidden rounded-3xl border border-blue-100 bg-white shadow-lg">
+            <div class="gallery-frame">
+              <img src="images/ielts-pte.jpg" alt="IELTS PTE - Study abroad IELTS and PTE guidance for Canada Australia USA UK Denmark" class="gallery-image" width="750" height="675" loading="lazy" decoding="async">
+            </div>
+            <figcaption class="px-5 py-4 text-center font-bold text-blue-900">IELTS PTE</figcaption>
+          </figure>
+
+          <figure class="gallery-card overflow-hidden rounded-3xl border border-blue-100 bg-white shadow-lg">
+            <div class="gallery-frame is-square">
+              <img src="images/hsc-banner.jpg" alt="HSC Banner - HSC er pore IELTS PTE course guidance" class="gallery-image" width="748" height="751" loading="lazy" decoding="async">
+            </div>
+            <figcaption class="px-5 py-4 text-center font-bold text-blue-900">HSC Banner</figcaption>
+          </figure>
+
+          <figure class="gallery-card overflow-hidden rounded-3xl border border-blue-100 bg-white shadow-lg">
+            <div class="gallery-frame is-portrait">
+              <img src="images/rajib-sir-photo.jpg" alt="Rajib Sir Photo - IELTS Pro English instructor Rajib Hossain" class="gallery-image" width="1066" height="1358" loading="lazy" decoding="async">
+            </div>
+            <figcaption class="px-5 py-4 text-center font-bold text-blue-900">Rajib Sir Photo</figcaption>
+          </figure>
+
+          <figure class="gallery-card overflow-hidden rounded-3xl border border-blue-100 bg-white shadow-lg">
+            <div class="gallery-frame is-square">
+              <img src="images/ielts-pro-logo.jpg" alt="IELTS Pro Logo - IELTS Pro and Visa Process brand logo" class="gallery-image" width="1333" height="1333" loading="lazy" decoding="async">
+            </div>
+            <figcaption class="px-5 py-4 text-center font-bold text-blue-900">IELTS Pro Logo</figcaption>
+          </figure>
+
+          <figure class="gallery-card overflow-hidden rounded-3xl border border-blue-100 bg-white shadow-lg">
+            <div class="gallery-frame is-portrait">
+              <img src="images/rajib-sir-award-image.jpg" alt="Rajib Sir Award Image - Rajib Sir receiving best speaker award" class="gallery-image" width="1120" height="1600" loading="lazy" decoding="async">
+            </div>
+            <figcaption class="px-5 py-4 text-center font-bold text-blue-900">Rajib Sir Award Image</figcaption>
+          </figure>
+
+          <figure class="gallery-card overflow-hidden rounded-3xl border border-blue-100 bg-white shadow-lg">
+            <div class="gallery-frame is-portrait">
+              <img src="images/rajib-sir-trophy-image.jpg" alt="Rajib Sir Trophy Image - Rajib Sir with best speaker trophy" class="gallery-image" width="1120" height="1600" loading="lazy" decoding="async">
+            </div>
+            <figcaption class="px-5 py-4 text-center font-bold text-blue-900">Rajib Sir Trophy Image</figcaption>
+          </figure>
+
+          <figure class="gallery-card overflow-hidden rounded-3xl border border-blue-100 bg-white shadow-lg">
+            <div class="gallery-frame is-portrait">
+              <img src="images/natural-spoken-book-cover.jpg" alt="Natural Spoken Book Cover - English spoken learning book by Rajib Hossain" class="gallery-image" width="759" height="1032" loading="lazy" decoding="async">
+            </div>
+            <figcaption class="px-5 py-4 text-center font-bold text-blue-900">Natural Spoken Book Cover</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="hsc" class="bg-gradient-to-br from-yellow-50 to-white py-20">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 md:grid-cols-2 lg:px-8">
+        <div>
+          <span class="mb-4 inline-block rounded-full bg-yellow-400 px-4 py-1 font-bold text-blue-900">HSC স্পেশাল ব্যাচ</span>
+          <h2 class="mb-6 text-4xl font-bold text-blue-900">HSC এর পরেই শুরু করুন IELTS</h2>
+          <p class="mb-6 text-lg text-gray-700">HSC পরীক্ষার পর সময় নষ্ট না করে এখনই শুরু করুন IELTS প্রস্তুতি। Early start means better score and faster study abroad planning.</p>
+          <div class="mb-8 space-y-4">
+            <p class="flex items-start gap-3 text-gray-700"><i data-lucide="check-circle" class="mt-1 h-6 w-6 flex-shrink-0 text-green-500"></i>HSC এর পর university admission এর আগে IELTS শেষ করুন</p>
+            <p class="flex items-start gap-3 text-gray-700"><i data-lucide="check-circle" class="mt-1 h-6 w-6 flex-shrink-0 text-green-500"></i>Foundation strong থাকলে সহজে 7+ Band পাওয়া যায়</p>
+            <p class="flex items-start gap-3 text-gray-700"><i data-lucide="check-circle" class="mt-1 h-6 w-6 flex-shrink-0 text-green-500"></i>Canada, USA, UK এর university তে direct admission planning</p>
+          </div>
+          <a href="https://wa.me/8801719994452?text=আমি%20HSC%20Special%20IELTS%20ব্যাচে%20ভর্তি%20হতে%20চাই" target="_blank" rel="noopener" class="btn-primary inline-flex items-center gap-2 rounded-2xl bg-blue-600 px-8 py-4 font-bold text-white hover:bg-blue-700">HSC স্পেশাল ব্যাচে ভর্তি হন <i data-lucide="arrow-right" class="h-5 w-5"></i></a>
+        </div>
+        <div class="rounded-3xl bg-white p-8 shadow-xl">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="rounded-2xl bg-yellow-100 p-6">
+              <p class="text-3xl font-bold text-blue-900">HSC</p>
+              <p class="mt-2 text-gray-700">পরবর্তী ব্যাচ</p>
+            </div>
+            <div class="rounded-2xl bg-blue-100 p-6">
+              <p class="text-3xl font-bold text-blue-900">7+</p>
+              <p class="mt-2 text-gray-700">Target Band</p>
+            </div>
+            <div class="col-span-2 rounded-2xl bg-blue-900 p-6 text-white">
+              <p class="text-xl font-bold">IELTS / PTE + Study Visa roadmap</p>
+              <p class="mt-2 text-blue-100">Bangla guidance with simple English support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="visa" class="bg-white py-20">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 md:grid-cols-2 lg:px-8">
+        <div>
+          <h2 class="mb-6 text-4xl font-bold text-blue-900">IELTS ও ভিসা প্রসেস - এক ছাদের নিচে</h2>
+          <p class="mb-6 text-lg text-gray-700">শুধু IELTS নয়, আমরা Study Visa Process এর complete guidance দিই। Canada, USA, UK, Australia সহ বিভিন্ন দেশের জন্য support।</p>
+          <div class="mb-8 space-y-4">
+            <div class="flex items-start gap-3">
+              <i data-lucide="file-text" class="mt-1 h-6 w-6 flex-shrink-0 text-blue-600"></i>
+              <div><h4 class="font-bold text-blue-900">University Selection</h4><p class="text-gray-600">আপনার profile অনুযায়ী সেরা university shortlist.</p></div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i data-lucide="file-check" class="mt-1 h-6 w-6 flex-shrink-0 text-blue-600"></i>
+              <div><h4 class="font-bold text-blue-900">SOP & Documentation</h4><p class="text-gray-600">Professional SOP, LOR ও document checklist.</p></div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i data-lucide="plane" class="mt-1 h-6 w-6 flex-shrink-0 text-blue-600"></i>
+              <div><h4 class="font-bold text-blue-900">Visa Application</h4><p class="text-gray-600">Visa file থেকে interview preparation পর্যন্ত.</p></div>
+            </div>
+          </div>
+          <a href="https://wa.me/8801719994452?text=আমি%20Study%20Visa%20counselling%20চাই" target="_blank" rel="noopener" class="btn-primary inline-flex items-center gap-2 rounded-2xl bg-yellow-400 px-8 py-4 font-bold text-blue-900 hover:bg-yellow-500">ফ্রি ভিসা কাউন্সেলিং <i data-lucide="arrow-right" class="h-5 w-5"></i></a>
+        </div>
+        <div class="rounded-3xl bg-blue-50 p-8 shadow-xl">
+          <div class="rounded-3xl bg-white p-8">
+            <i data-lucide="map" class="mb-6 h-12 w-12 text-blue-600"></i>
+            <h3 class="mb-4 text-2xl font-bold text-blue-900">Study Abroad Roadmap</h3>
+            <ol class="space-y-4 text-gray-700">
+              <li class="flex gap-3"><span class="font-bold text-blue-600">1.</span> IELTS / PTE preparation</li>
+              <li class="flex gap-3"><span class="font-bold text-blue-600">2.</span> University shortlist</li>
+              <li class="flex gap-3"><span class="font-bold text-blue-600">3.</span> Documents and SOP</li>
+              <li class="flex gap-3"><span class="font-bold text-blue-600">4.</span> Visa application support</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="payment" class="hero-gradient py-20 text-white">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-12 text-center">
+          <h2 class="mb-4 text-4xl font-bold">পেমেন্ট পদ্ধতি</h2>
+          <p class="text-lg text-blue-100">Bkash বা Nagad এ Send Money করে ভর্তি নিশ্চিত করুন</p>
+          <p class="mt-3 inline-block rounded-full bg-yellow-400 px-5 py-2 font-bold text-blue-900">Send Money করে Transaction ID WhatsApp এ পাঠান</p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2">
+          <article class="rounded-3xl border-2 border-white/20 bg-white/10 p-8 backdrop-blur">
+            <div class="mb-6 flex items-center gap-4">
+              <div class="flex h-16 w-16 items-center justify-center rounded-2xl bg-[var(--bkash)] text-xl font-bold text-white">bK</div>
+              <div>
+                <h3 class="text-2xl font-bold">Bkash</h3>
+                <p class="text-blue-100">Personal Number</p>
+              </div>
+            </div>
+            <p class="mb-2 text-sm text-blue-100">Send Money number</p>
+            <p class="mb-6 text-3xl font-bold tracking-wide" data-payment-number="bkash">01719994452</p>
+            <div class="flex flex-col gap-3 sm:flex-row">
+              <button class="payment-copy-btn inline-flex items-center justify-center gap-2 rounded-xl bg-yellow-400 px-5 py-3 font-bold text-blue-900 hover:bg-yellow-500" type="button" data-copy-number="01719994452" data-provider="Bkash">
+                <i data-lucide="copy" class="h-5 w-5"></i> Copy Number
+              </button>
+              <a href="https://wa.me/8801719994452?text=Send%20Money%20করেছি।%20Transaction%20ID:%20" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white px-5 py-3 font-bold hover:bg-white/10">
+                <i data-lucide="message-circle" class="h-5 w-5"></i> WhatsApp Send
+              </a>
+            </div>
+          </article>
+
+          <article class="rounded-3xl border-2 border-white/20 bg-white/10 p-8 backdrop-blur">
+            <div class="mb-6 flex items-center gap-4">
+              <div class="flex h-16 w-16 items-center justify-center rounded-2xl bg-[var(--nagad)] text-xl font-bold text-white">N</div>
+              <div>
+                <h3 class="text-2xl font-bold">Nagad</h3>
+                <p class="text-blue-100">Personal Number</p>
+              </div>
+            </div>
+            <p class="mb-2 text-sm text-blue-100">Send Money number</p>
+            <p class="mb-6 text-3xl font-bold tracking-wide" data-payment-number="nagad">01719994452</p>
+            <div class="flex flex-col gap-3 sm:flex-row">
+              <button class="payment-copy-btn inline-flex items-center justify-center gap-2 rounded-xl bg-yellow-400 px-5 py-3 font-bold text-blue-900 hover:bg-yellow-500" type="button" data-copy-number="01719994452" data-provider="Nagad">
+                <i data-lucide="copy" class="h-5 w-5"></i> Copy Number
+              </button>
+              <a href="https://wa.me/8801719994452?text=Send%20Money%20করেছি।%20Transaction%20ID:%20" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white px-5 py-3 font-bold hover:bg-white/10">
+                <i data-lucide="message-circle" class="h-5 w-5"></i> WhatsApp Send
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="mt-8 rounded-3xl border border-white/20 bg-white/10 p-8">
+          <h3 class="mb-4 text-xl font-bold">পেমেন্ট নির্দেশনা</h3>
+          <ol class="space-y-3 text-blue-100">
+            <li class="flex gap-3"><span class="font-bold text-white">1.</span>Bkash/Nagad app খুলে Send Money option সিলেক্ট করুন।</li>
+            <li class="flex gap-3"><span class="font-bold text-white">2.</span>01719994452 নম্বরে course fee পাঠান।</li>
+            <li class="flex gap-3"><span class="font-bold text-white">3.</span>Transaction ID কপি করুন।</li>
+            <li class="flex gap-3"><span class="font-bold text-white">4.</span>Send Money করে Transaction ID WhatsApp এ পাঠান।</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-gray-50 py-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-16 text-center">
+          <h2 class="mb-4 text-4xl font-bold text-blue-900">যোগাযোগ করুন</h2>
+          <p class="text-lg text-gray-600">আজই শুরু করুন আপনার বিদেশ যাত্রার প্রস্তুতি</p>
+        </div>
+        <div class="grid gap-12 md:grid-cols-2">
+          <div class="rounded-3xl bg-white p-8 shadow-lg">
+            <div class="mb-6 flex items-center gap-4">
+              <div class="flex h-20 w-20 items-center justify-center rounded-2xl bg-blue-900 text-2xl font-bold text-white">R</div>
+              <div>
+                <h3 class="text-2xl font-bold text-blue-900">Rajib Sir</h3>
+                <p class="text-gray-600">IELTS Expert & Visa Consultant</p>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <a href="https://wa.me/8801719994452" target="_blank" rel="noopener" class="flex items-center gap-4 rounded-xl bg-green-50 p-4 transition hover:bg-green-100">
+                <div class="rounded-xl bg-[#25D366] p-3"><i data-lucide="message-circle" class="h-6 w-6 text-white"></i></div>
+                <div><p class="text-sm text-gray-600">WhatsApp</p><p class="font-bold text-gray-900">0171 999 4452</p></div>
+              </a>
+              <a href="mailto:rajib.ieltspro@gmail.com" class="flex items-center gap-4 rounded-xl bg-blue-50 p-4 transition hover:bg-blue-100">
+                <div class="rounded-xl bg-blue-600 p-3"><i data-lucide="mail" class="h-6 w-6 text-white"></i></div>
+                <div><p class="text-sm text-gray-600">Email</p><p class="font-bold text-gray-900">rajib.ieltspro@gmail.com</p></div>
+              </a>
+              <a href="https://www.facebook.com/rajib.pdm?mibextid=ZbWKwL" target="_blank" rel="noopener" class="flex items-center gap-4 rounded-xl bg-blue-50 p-4 transition hover:bg-blue-100">
+                <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#1877F2] text-2xl font-bold text-white">f</div>
+                <div><p class="text-sm text-gray-600">Facebook</p><p class="font-bold text-gray-900">Rajib's IELTS Spoken</p></div>
+              </a>
+              <div class="flex items-start gap-4 rounded-xl bg-gray-50 p-4">
+                <div class="rounded-xl bg-gray-600 p-3"><i data-lucide="map-pin" class="h-6 w-6 text-white"></i></div>
+                <div><p class="text-sm text-gray-600">Address</p><p class="font-bold text-gray-900">Subachani Road, Tongibari, Munshiganj</p></div>
+              </div>
+            </div>
+          </div>
+
+          <form class="rounded-3xl bg-white p-8 shadow-lg" id="lead-form">
+            <h3 class="mb-6 text-2xl font-bold text-blue-900">Free Counselling Request</h3>
+            <div class="space-y-4">
+              <label class="block">
+                <span class="mb-2 block font-semibold text-gray-700">নাম</span>
+                <input class="w-full rounded-xl border border-gray-200 px-4 py-3 outline-none focus:border-blue-600" name="name" type="text" placeholder="আপনার নাম" required>
+              </label>
+              <label class="block">
+                <span class="mb-2 block font-semibold text-gray-700">কোর্স</span>
+                <select class="w-full rounded-xl border border-gray-200 px-4 py-3 outline-none focus:border-blue-600" name="course">
+                  <option>Online IELTS Course</option>
+                  <option>Spoken English</option>
+                  <option>PTE Academic</option>
+                  <option>Study Visa Counselling</option>
+                </select>
+              </label>
+              <label class="block">
+                <span class="mb-2 block font-semibold text-gray-700">মেসেজ</span>
+                <textarea class="min-h-28 w-full rounded-xl border border-gray-200 px-4 py-3 outline-none focus:border-blue-600" name="message" placeholder="আপনার প্রশ্ন লিখুন"></textarea>
+              </label>
+              <button class="btn-primary inline-flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 py-3 font-bold text-white hover:bg-blue-700" type="submit">
+                <i data-lucide="send" class="h-5 w-5"></i> WhatsApp এ পাঠান
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-blue-900 py-12 text-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mb-8 grid gap-8 md:grid-cols-4">
+        <div class="md:col-span-2">
+          <div class="mb-4 flex items-center gap-3">
+            <img src="images/ielts-pro-logo.jpg" alt="IELTS Pro & Visa Process logo" class="h-12 w-12 rounded-lg object-cover" width="1333" height="1333">
+            <span class="text-xl font-bold">IELTS Pro & Visa Process</span>
+          </div>
+          <p class="mb-4 text-blue-200">HSC এর পরে IELTS, Target 7+ | আপনার বিদেশ যাত্রার বিশ্বস্ত সঙ্গী</p>
+          <div class="flex gap-4">
+            <a href="https://wa.me/8801719994452" target="_blank" rel="noopener" class="rounded-lg bg-white/10 p-3 transition hover:bg-white/20" aria-label="WhatsApp"><i data-lucide="message-circle" class="h-5 w-5"></i></a>
+            <a href="mailto:rajib.ieltspro@gmail.com" class="rounded-lg bg-white/10 p-3 transition hover:bg-white/20" aria-label="Email"><i data-lucide="mail" class="h-5 w-5"></i></a>
+            <a href="https://www.facebook.com/rajib.pdm?mibextid=ZbWKwL" target="_blank" rel="noopener" class="flex h-11 w-11 items-center justify-center rounded-lg bg-white/10 text-xl font-bold transition hover:bg-white/20" aria-label="Facebook">f</a>
+            <a href="#home" class="rounded-lg bg-white/10 p-3 transition hover:bg-white/20" aria-label="Back to top"><i data-lucide="arrow-up" class="h-5 w-5"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="mb-4 text-lg font-bold">Quick Links</h4>
+          <ul class="space-y-2 text-blue-200">
+            <li><a href="#home" class="transition hover:text-yellow-400">হোম</a></li>
+            <li><a href="#courses" class="transition hover:text-yellow-400">কোর্সসমূহ</a></li>
+            <li><a href="#instructor" class="transition hover:text-yellow-400">আমাদের সম্পর্কে</a></li>
+            <li><a href="#payment" class="transition hover:text-yellow-400">পেমেন্ট</a></li>
+            <li><a href="#gallery" class="transition hover:text-yellow-400">গ্যালারি</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="mb-4 text-lg font-bold">Contact</h4>
+          <ul class="space-y-2 text-blue-200">
+            <li class="flex items-center gap-2"><i data-lucide="phone" class="h-4 w-4"></i>0171 999 4452</li>
+            <li class="flex items-center gap-2"><i data-lucide="mail" class="h-4 w-4"></i>rajib.ieltspro@gmail.com</li>
+            <li class="flex items-center gap-2"><span class="flex h-4 w-4 items-center justify-center rounded bg-[#1877F2] text-xs font-bold text-white">f</span><a href="https://www.facebook.com/rajib.pdm?mibextid=ZbWKwL" target="_blank" rel="noopener" class="transition hover:text-yellow-400">Facebook Page</a></li>
+            <li class="flex items-start gap-2"><i data-lucide="map-pin" class="mt-1 h-4 w-4"></i>Tongibari, Munshiganj</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/20 pt-8 text-center text-blue-200">
+        <p>&copy; 2026 IELTS Pro & Visa Process. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const CONTACT_NUMBER = "8801719994452";
+
+    function refreshIcons() {
+      if (window.lucide) {
+        window.lucide.createIcons();
+      }
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      if (!toast) return;
+
+      toast.textContent = message;
+      toast.classList.add("is-visible");
+
+      window.clearTimeout(showToast.timer);
+      showToast.timer = window.setTimeout(() => {
+        toast.classList.remove("is-visible");
+      }, 2200);
+    }
+
+    async function copyText(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return;
+      }
+
+      const input = document.createElement("textarea");
+      input.value = text;
+      input.setAttribute("readonly", "");
+      input.style.position = "fixed";
+      input.style.left = "-9999px";
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand("copy");
+      input.remove();
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      refreshIcons();
+
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener("click", () => {
+          const isOpen = !mobileMenu.classList.contains("hidden");
+          mobileMenu.classList.toggle("hidden", isOpen);
+          mobileMenuBtn.setAttribute("aria-expanded", String(!isOpen));
+          mobileMenuBtn.innerHTML = isOpen
+            ? '<i data-lucide="menu" class="h-7 w-7"></i>'
+            : '<i data-lucide="x" class="h-7 w-7"></i>';
+          refreshIcons();
+        });
+
+        mobileMenu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden");
+            mobileMenuBtn.setAttribute("aria-expanded", "false");
+            mobileMenuBtn.innerHTML = '<i data-lucide="menu" class="h-7 w-7"></i>';
+            refreshIcons();
+          });
+        });
+      }
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", (event) => {
+          const href = anchor.getAttribute("href");
+          if (!href || href === "#") return;
+
+          const target = document.querySelector(href);
+          if (!target) return;
+
+          event.preventDefault();
+          const navHeight = 80;
+          const top = target.getBoundingClientRect().top + window.scrollY - navHeight;
+
+          window.scrollTo({ top, behavior: "smooth" });
+        });
+      });
+
+      document.querySelectorAll(".payment-copy-btn").forEach((button) => {
+        button.addEventListener("click", async () => {
+          const number = button.dataset.copyNumber || "";
+          const provider = button.dataset.provider || "Payment";
+          const original = button.innerHTML;
+
+          try {
+            await copyText(number);
+            button.innerHTML = '<i data-lucide="check" class="h-5 w-5"></i> Copied';
+            refreshIcons();
+            showToast(`${provider} number copied: ${number}`);
+            window.setTimeout(() => {
+              button.innerHTML = original;
+              refreshIcons();
+            }, 1800);
+          } catch (error) {
+            showToast(`Copy failed. Number: ${number}`);
+          }
+        });
+      });
+
+      const leadForm = document.getElementById("lead-form");
+      if (leadForm) {
+        leadForm.addEventListener("submit", (event) => {
+          event.preventDefault();
+          const formData = new FormData(leadForm);
+          const name = formData.get("name") || "";
+          const course = formData.get("course") || "";
+          const message = formData.get("message") || "";
+          const text = `নাম: ${name}\nকোর্স: ${course}\nমেসেজ: ${message}`;
+          window.open(`https://wa.me/${CONTACT_NUMBER}?text=${encodeURIComponent(text)}`, "_blank", "noopener");
+          showToast("WhatsApp message ready");
+        });
+      }
+    });
+  </script>
+</body>
+</html>
